@@ -1,0 +1,249 @@
+.Navigation {
+    width: 100%;
+    height: 80px;
+    background: white;
+    /*border-bottom: 1px solid lightgray;*/
+}
+
+.Navigation__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Navigation__logo-container a {
+    text-decoration: none;
+    line-height: 200%;
+    font-weight: bolder;
+    font-size: x-large;
+    color: lightcoral;
+}
+
+.Navigation__links {
+    height: 100vh;
+    /*display: none;*/
+    align-items: center;
+    width: 300px;
+    background: white;
+    z-index: 1000;
+    padding: 10px;
+    transform: translateX(100%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: transform ease-in-out 0.4s;
+}
+
+.Navigation__links-ul {
+    height: 100%;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.Navigation__link {
+    margin-right: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.Navigation__link-a {
+    text-decoration: none;
+    /*height: 100%;*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: black;
+    transition: background ease-in-out 0.2s, color ease-in-out 0.2s;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.Navigation__link-a:hover {
+    /*height: calc(100% - 2px) !important;*/
+    background: #521761;
+    color: white;
+    outline: 3px solid aqua;
+}
+
+.Navigation__link:last-child > .Navigation__link-a {
+    background: #521761;
+    color: white;
+}
+
+.Navigation__link-a p {
+
+}
+
+.Navigation__burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Navigation__burger:hover > div {
+    background: aqua;
+}
+
+.Navigation__burger div {
+    transition: all ease-in-out 0.2s;
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin-bottom: 5px;
+}
+
+.Navigation__link .active {
+    outline: 1px solid red;
+}
+
+.Navigation__show {
+    transform: translateX(0) !important;
+    display: block !important;
+}
+
+/*.Navigation__sidebar {*/
+/*    height: 100vh;*/
+/*    !*display: block;*!*/
+/*}*/
+
+.Navigation__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.9;
+    z-index: 999;
+    transition: all ease-in-out 0.15s;
+    transform: translateX(100%);
+    /*display: none;*/
+}
+
+.Navigation__sidebar-header {
+    height: 80px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navigation__sidebar-logo a {
+    text-decoration: none;
+    line-height: 200%;
+    font-weight: bolder;
+    font-size: x-large;
+    color: lightcoral;
+}
+
+.Navigation__sidebar-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform ease-in-out 0.2s;
+    outline: none;
+}
+
+.Navigation__sidebar-close:hover {
+    transform: scale(1.1);
+}
+
+.Navigation__sidebar-close div {
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+}
+
+.Navigation__sidebar-close div:last-child {
+    transform: rotate(135deg);
+}
+
+.Navigation__sidebar-close div:first-child {
+    transform: rotate(45deg);
+}
+
+@media (min-width: 700px) {
+    .Navigation__container {
+        width: 80%;
+        padding: 0;
+    }
+
+    .Navigation__links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        transform: none;
+        height: 100%;
+        width: unset;
+        padding: 0;
+    }
+
+    .Navigation__sidebar-header {
+        display: none;
+    }
+
+    .Navigation__link {
+        border: none;
+    }
+
+    .Navigation__links-ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .Navigation__burger {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

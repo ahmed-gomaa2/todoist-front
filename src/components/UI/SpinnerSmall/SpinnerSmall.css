@@ -1,0 +1,18 @@
+.SpinnerSmall {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /*top: 50%;*/
+    left: 50%;
+    margin-left: -10px;
+    /*margin-bottom: 20px;*/
+    /*margin-top: -10px;*/
+    background: inherit;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

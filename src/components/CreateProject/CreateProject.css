@@ -1,0 +1,134 @@
+.CreateProject {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    transform: translateY(-100%);
+    transition: transform ease-in-out 0.2s;
+}
+
+.CreateProject__active {
+    transform: none;
+    z-index: 300;
+}
+
+/*.CreateProject__active {*/
+/*    -webkit-transform: translate(-50%, -50%);*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+.CreateProject__overlay {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 299;
+    cursor: pointer;
+}
+
+
+.CreateProject__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /*height: 100px;*/
+    z-index: 300;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CreateProject__header {
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    font-weight: bolder;
+}
+
+.CreateProject__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.CreateProject__form-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.CreateProject__form-label {
+    margin-bottom: 10px;
+}
+
+.CreateProject__form-input {
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    border: 1px solid lightgray;
+}
+
+.CreateProject__form-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CreateProject__form-buttons button {
+    /*margin-right: auto;*/
+    padding: 10px 20px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.CreateProject__cancel {
+    background: #521761;
+    color: white;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    margin-left: auto;
+}
+.CreateProject__cancel:hover {
+    background: red;
+}
+
+.CreateProject__submit {
+    background: lawngreen;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+
+.CreateProject__submit:hover {
+    background: green;
+    color: white;
+}
+
+.CreateProject__submit:disabled {
+    color: #ccc;
+    background: unset;
+    cursor: not-allowed;
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+@media (min-width: 500px) {
+    .CreateProject__container {
+        width: 400px;
+    }
+}
+

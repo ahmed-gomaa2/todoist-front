@@ -1,0 +1,114 @@
+.Register {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.Register__container {
+    width: 100%;
+    /*height: 100%;*/
+    /*margin-top: auto;*/
+    padding-top: 50px;
+}
+
+.Register__header {
+    width: auto;
+    /*margin-top: 50px;*/
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Register__form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Register__form-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Register__form-item {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Register__form-label {
+    margin-bottom: 10px;
+}
+
+.Register__form-input {
+    height: 40px;
+    position: relative;
+}
+
+.Register__form-input input {
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.Register__form-input i {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    font-size: large;
+    border-right: 1px solid lightgray;
+    padding: 10px;
+}
+
+.Register__form-button {
+    height: 50px;
+    background: #16AE21;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    transition: all ease-in-out 0.2s;
+}
+
+.Register__form-button:hover {
+    box-shadow: 0 0 20px lightgreen;
+}
+
+.Register__form-login p a {
+    outline: none;
+}
+
+.Register__form-button:disabled {
+    color: #ccc;
+    background: unset;
+    cursor: not-allowed;
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+.input__invalid {
+    border: 1px solid red;
+    background-color: #fda49a;
+}
+
+.Register__form-error {
+    color: red;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.Register * {
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
